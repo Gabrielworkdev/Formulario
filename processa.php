@@ -3,7 +3,7 @@
 //segunda pag
 include_once("conexao.php");
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $matricula = $_POST["matricula"];
     $nome = $_POST["nome"];
     $Questao01 = $_POST["Questao01"];
@@ -23,18 +23,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
 
     // Prepara a instrução SQL para a inserção
-    $sql = "INSERT INTO avaliacao (matricula,nome,Questao01,Questao02,Questao03,Questao04,Questao05,Questao06,Questao07,Questao08,Questao09,Questao10) VALUES ('$matricula', '$nome', '$Questao01','$Questao02','$Questao03', '$Questao04', '$Questao05', '$Questao06', '$Questao07', '$Questao08', '$Questao09', '$Questao10')";
+    $sql = "INSERT INTO avaliacao(matricula,nome,Questao01,Questao02,Questao03,Questao04,Questao05,Questao06,Questao07,Questao08,Questao09,Questao10) VALUES ( '$matricula','$nome','$Questao01','$Questao02','$Questao03','$Questao04','$Questao05','$Questao06','$Questao06','$Questao07','$Questao08','$Questao09','$Questao10')";
     
 
 
-     Executa a inserção
+    // Executa a inserção
     if ($conn->query($sql) === TRUE) {
-      echo  "Dados inseridos com sucesso!";
+    echo  "Dados inseridos com sucesso!";
     } else {
-      echo "Erro na inserção: " . $conn->error;
+    echo "Erro na inserção: " . $conn->error;
     }
-   echo  Fecha a conexão
-  $conn->close();
+      //echo  Fecha a conexão
+    //$conn->close();
   }
 
 
@@ -46,10 +46,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Retorno</title>
+    
 </head>
 <body>
-    
+<form action="formulario.php" method= "POST">
+<h1> Obrigado por preencher nosso formulário !</h1>
+</form>
+
+
+
+
+<button class="btn"><a href="./formulario.php">voltar</button></a>
+<button class="btn"><a href="./consulta.php">consultar</button></a>
+
+
+     
 </body>
 </html>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="pt-BR">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Formulario</title>
 
   <head>
@@ -20,12 +20,12 @@
 
   <div class="form-container">
     <div class="topo"></div> <br><br><br>
-    <img class="imagem" src="./fdfdf.png" alt=""><br>
+    <img class="imagem" src="./assets/fdfdf.png" alt=""><br>
 
     <article class="plano-saude">
       
 
-      <h1><strong>Formulário de Avaliação - Plano de Saúde</strong></h1>
+      <h1><strong>Formulário de Resumo Anual</strong></h1>
 
       <p>
         O Plano de Saúde e assistência médico-hospitalar e ambulatorial (ASSIM Saúde) tem como responsabilidade prestar serviços que abrangem exames complementares, terapias, diagnósticos, internações clínico-cirúrgicas, obstétricas e em terapia intensiva, tanto em situações eletivas quanto emergenciais, em hospitais e clínicas, com acomodações coletivas comportando até três leitos hospitalares, sem restrição de faixa etária, para <strong>TODOS</strong> os colaboradores desta <strong>CENTRAL</strong> e seus dependentes.
@@ -38,7 +38,7 @@
 
     
     <form class="form1" action="processa.php" method="post">
-      <div class="form-title"><strong>Formulário de Matrícula</strong></div>
+      <div class="form-title"><strong>Informe seus dados</strong></div>
       <div class="form-topic">
         <label class="form-topic"for="matricula"><strong>Matrícula</strong></label>
         <input name="matricula"
@@ -129,14 +129,6 @@
          </div>
     </form>
   </div>
-  <script>
-    function funcao1()
-    {
-    window.alert('Dados inseridos com sucesso. Clique em OK ');
-    
-    }
-  
-    </script>;
 </body>
 
 </html>

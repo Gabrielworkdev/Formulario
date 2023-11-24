@@ -6,7 +6,7 @@
     $dbname = "cadastro";
 
  // Cria uma conexão com o banco de dados
- $conn = new mysqli($servername, $username,$password,$dbname);
+ $conn = mysqli_connect($servername, $username,$password,$dbname);
  // Verifica a conexão
  if (!$conn) {
     print("Erro na conexão ");
