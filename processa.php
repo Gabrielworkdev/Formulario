@@ -1,7 +1,7 @@
 <?php
 
 //segunda pag
-include_once("conexao.php")
+include_once("conexao.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $matricula = $_POST["matricula"];
@@ -23,18 +23,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
 
     // Prepara a instrução SQL para a inserção
-    $sql = "INSERT INTO saude (matricula,nome,Questao01,Questao02,Questao03,Questao04,Questao05,Questao06,Questao07,Questao08,Questao09,Questao10) VALUES ('$matricula', '$nome', '$Questao01','$Questao02','$Questao03', '$Questao04', '$Questao05', '$Questao06', '$Questao07', '$Questao08', '$Questao09', '$Questao10')";
+    $sql = "INSERT INTO avaliacao (matricula,nome,Questao01,Questao02,Questao03,Questao04,Questao05,Questao06,Questao07,Questao08,Questao09,Questao10) VALUES ('$matricula', '$nome', '$Questao01','$Questao02','$Questao03', '$Questao04', '$Questao05', '$Questao06', '$Questao07', '$Questao08', '$Questao09', '$Questao10')";
     
 
 
-    // Executa a inserção
+     Executa a inserção
     if ($conn->query($sql) === TRUE) {
-     // echo  "Dados inseridos com sucesso!";
+      echo  "Dados inseridos com sucesso!";
     } else {
       echo "Erro na inserção: " . $conn->error;
     }
- //   echo  Fecha a conexão
-    //$conn->close();
+   echo  Fecha a conexão
+  $conn->close();
   }
 
 

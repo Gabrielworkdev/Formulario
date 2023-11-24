@@ -37,7 +37,7 @@
     </article>
 
     
-    <form class="form1" action="formulario.php" method="post">
+    <form class="form1" action="processa.php" method="post">
       <div class="form-title"><strong>Formulário de Matrícula</strong></div>
       <div class="form-topic">
         <label class="form-topic"for="matricula"><strong>Matrícula</strong></label>
