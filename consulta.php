@@ -4,11 +4,12 @@
 // CONECTANDO COM O BANCO DE DADOS
 include_once("conexao.php");
     //é necessário incluir este código abaixo
+    $filtro = isset($_GET['filtro'])?$_GET['filtro']:"";
     $sql = "select * from avaliacao where nome like '%$filtro%'";
     $consulta = mysqli_query($conn, $sql);
     $registros = mysqli_num_rows($consulta);
 
-    $filtro = isset($_GET['filtro'])?$_GET['filtro']:"";
+    
     //comando para filtrar qualquer palavra que o usuário deseja
     //$sql = "select * from usuarios where profissao like '%$filtro%' order by nome";
     //$consulta = mysqli_query($conn, $sql);
@@ -29,7 +30,7 @@ include_once("conexao.php");
     <div class="container1">
         <nav>
             <ul class="menu">
-                <a href="formulario.php"><li>Cadastro</li></a>
+                <a href="formulario.php"><li>Formulário</li></a>
                 <!---<a href="consultas.php"><li>Consultas</li></a>---->
             </ul>
         </nav>
@@ -54,8 +55,8 @@ include_once("conexao.php");
 
             while($exibirRegistros = mysqli_fetch_array($consulta)){
                 //$codigo = $exibirRegistros[0];
-                $matricula = $exibirRegistros[0];
-                $nome = $exibirRegistros[1];
+                $matricula = $exibirRegistros[1];
+                $nome = $exibirRegistros[2];
                 //$profissao = $exibirRegistros[3];
                 //$salario =  $exibirRegistros[4];
                 print "<article>";

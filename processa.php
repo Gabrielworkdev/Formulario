@@ -29,16 +29,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
 //mysqli_close($conn)
 ?>
-<?php
+<!---<?php
 if($conn->query($sql) === TRUE){
   echo  "Dados inseridos com sucesso!";
 }else{
   echo "Erro na inserção: " . $conn->error;
 }
 //echo  Fecha a conexão
-$conn->close();
+//$conn->close();
 
-?>
+?>-->
 
 
 <!DOCTYPE html>
@@ -60,15 +60,16 @@ $conn->close();
 
 <button class="btn"><a href="./formulario.php">voltar</button></a>
 <button class="btn"><a href="./consulta.php">consultar</button></a>
-      <?php
-      if(linhas == 1){
+<!--/*
+if(linhas == 1){
                 print"Consulta";
-      }else{
-                print"você já preencheu este formulário.<br> Entre em contato com a T.I caso precise alterar algo.";
-      }
-              
-      ?>
+}else{
+ // print"você já preencheu este formulário.<br> Entre em contato com a T.I caso precise alterar algo.";
 
+*/
+              
+//
+--->
      
 </body>
 </html>
