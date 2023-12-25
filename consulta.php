@@ -1,6 +1,12 @@
 <?php
+
+//aula parte1
 // CONECTANDO COM O BANCO DE DADOS
 include_once("conexao.php");
+    //é necessário incluir este código abaixo
+    $sql = "select * from avaliacao where nome like '%$filtro%'";
+    $consulta = mysqli_query($conn, $sql);
+    $registros = mysqli_num_rows($consulta);
 
     $filtro = isset($_GET['filtro'])?$_GET['filtro']:"";
     //comando para filtrar qualquer palavra que o usuário deseja
@@ -16,7 +22,7 @@ include_once("conexao.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Cadastro</title>
+    <title>Consulta</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -48,15 +54,15 @@ include_once("conexao.php");
 
             while($exibirRegistros = mysqli_fetch_array($consulta)){
                 //$codigo = $exibirRegistros[0];
+                $matricula = $exibirRegistros[0];
                 $nome = $exibirRegistros[1];
-                $matricula = $exibirRegistros[2];
                 //$profissao = $exibirRegistros[3];
                 //$salario =  $exibirRegistros[4];
                 print "<article>";
 
-               //print "$codigo<br>";
+               print "$matricula<br><br><br>";
                 print "$nome<br>";
-                print "$matricula<br>";
+               // print "$matricula<br>";
                 //print "$profissao<br>";
                 //print "$salario";
 
@@ -74,3 +80,14 @@ include_once("conexao.php");
     
 </body>
 </html>
+
+<!--CONFIGURANDO PAGINA DE CONSULTA 
+ ABRINDO O BD NO SQL  -- USE NOME DO BANCO 
+
+ PESQUISNADO DADOS SELECT * FROM NOME DA TABELA
+
+
+ aplicando o comando de filtro no banco 
+
+ SELECT * FROM `avaliacao` WHERE 1
+-->
