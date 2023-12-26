@@ -28,11 +28,11 @@
       <h1><strong>Formulário de Resumo Anual</strong></h1>
 
       <p>
-        O Plano de Saúde e assistência médico-hospitalar e ambulatorial (ASSIM Saúde) tem como responsabilidade prestar serviços que abrangem exames complementares, terapias, diagnósticos, internações clínico-cirúrgicas, obstétricas e em terapia intensiva, tanto em situações eletivas quanto emergenciais, em hospitais e clínicas, com acomodações coletivas comportando até três leitos hospitalares, sem restrição de faixa etária, para <strong>TODOS</strong> os colaboradores desta <strong>CENTRAL</strong> e seus dependentes.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem distinctio aspernatur fuga dolor voluptate. Et commodi omnis error laborum. Laudantium nostrum omnis rem quis? Consequatur repellendus doloremque suscipit neque sit? <strong>xxx</strong> xxx <strong>xxx</strong> xxx.
       </p>
 
       <p>
-        Portanto, é solicitado que todos os colaboradores beneficiários preencham este formulário para avaliar sua satisfação com o plano, além de registrar elogios ou quaisquer falhas identificadas.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem distinctio aspernatur fuga dolor voluptate. Et commodi omnis error laborum. Laudantium nostrum omnis rem quis? Consequatur repellendus doloremque suscipit neque sit?
       </p>
     </article>
 
